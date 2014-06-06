@@ -2,10 +2,15 @@
 #Note: to flash the Arduino Mega (ATmega 2560)
 #avrdude -p m2560 -c stk500v2 -P /path/to/serial -b 115200 -F -U flash:w:/path/to/image.hex
 
+#Note: Makerbot Replicator (Mightyboard) has a ATmega1280
 baud=115200
-avr=m2560
+avr=m1280
 dst=$avr.`date +"%Y%m%d_%H%M%S"`
 port=/dev/ttyUSB0
+
+#Flashing bootloader to mightyboard
+#avrdude -C avrdude.conf -p m1280 -F -P usb -c usbtiny -U flash:w:bootloader/1280_bootloader/ATmegaBOOT_168_atmega1280.hex -U lfuse:w:0xFF:m -U hfuse:w:0xDA:m -U efuse:w:0xF4:m -U lock:w:0x0F:m
+
 
 # calibration  One or more bytes of RC oscillator calibration data.
 # eeprom       The EEPROM of the device.
