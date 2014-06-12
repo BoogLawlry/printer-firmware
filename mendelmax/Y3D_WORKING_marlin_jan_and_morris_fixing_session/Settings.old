@@ -1,0 +1,15 @@
+< 21:42:05: echo:Hardcoded Default Settings Loaded
+< 21:42:05: echo:Steps per unit:
+< 21:42:05: echo:  M92 X80.00 Y80.00 Z2560.00 E805.00
+< 21:42:05: echo:Maximum feedrates (mm/s):
+< 21:42:05: echo:  M203 X400.00 Y400.00 Z2.00 E45.00
+< 21:42:05: echo:Maximum Acceleration (mm/s2):
+< 21:42:05: echo:  M201 X9000 Y9000 Z100 E10000
+< 21:42:05: echo:Acceleration: S=acceleration, T=retract acceleration
+< 21:42:05: echo:  M204 S3000.00 T3000.00
+< 21:42:05: echo:Advanced variables: S=Min feedrate (mm/s), T=Min travel feedrate (mm/s), B=minimum segment time (ms), X=maximum XY jerk (mm/s),  Z=maximum Z jerk (mm/s),  E=maximum E jerk (mm/s)
+< 21:42:05: echo:  M205 S0.00 T0.00 B20000 X20.00 Z0.40 E5.00
+< 21:42:05: echo:Home offset (mm):
+< 21:42:05: echo:  M206 X0.00 Y0.00 Z0.00
+< 21:42:05: echo:PID settings:
+< 21:42:05: echo:   M301 P7.00 I0.10 D12.00
